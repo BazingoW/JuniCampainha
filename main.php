@@ -8,7 +8,7 @@
     
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+         <title>JuniCampainha</title>
         <style>
 .btn-huge{
     padding:20px 50px;
@@ -17,7 +17,8 @@ font-family: 'Roboto', sans-serif;
     
 }
             button{
-  margin-top:50%;
+  margin-top:25%;
+                
   display:block;
 
                 
@@ -48,18 +49,21 @@ text-align: center;
 </div>
 
 
- <span id="result" class="answer"></span>
+ <span id="result" class="answer" style="display:none">Ding Dong!</span>
  
     <script>
    
   
         $(document).ready(function(){
+            
+            
     $("#target").click(function(){
       
         
         $.post("postdingdong.php",null, function(info){
-            $("#result").html(info);
-        })
+        
+             $("#result").fadeIn().delay(1000).fadeOut();
+        });
     });
 });
     </script>
