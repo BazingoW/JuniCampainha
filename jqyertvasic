@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        alert("The paragraph was clicked.");
+    });
+});
+</script>
+</head>
+<body>
+
+<p>Click on this paragraph.</p>
+
+</body>
+</html>
+
+<?php
+
+	$host="db.ist.utl.pt";	// MySQL is hosted in this machine
+	$user="ist181138";	// <== replace istxxx by your IST identity
+	$password="isuj4225";	// <== paste here the password assigned by mysql_reset
+	$dbname = $user;	// Do nothing here, your database has the same name as your username.
+
+ 
+	$connection = new PDO("mysql:host=" . $host. ";dbname=" . $dbname, $user, $password, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING));
+
+	echo("<p>Connected to MySQL database $dbname on $host as user $user</p>\n");
+
+	$sql = "SELECT * FROM TesteCampainha;";
+
+	echo("<p>Query: " . $sql . "</p>\n");
+
+	$result = $connection->query($sql);
+	
+	$num = $result->rowCount();
+
+	echo("<p>$num records retrieved:</p>\n");
+
+	echo("<table border=\"1\">\n");
+	echo("<tr><td>id</td><td>estado</td></tr>\n");
+	foreach($result as $row)
+	{
+		echo("<tr><td>");
+		echo($row["id"]);
+		echo("</td><td>");
+		echo($row["dingdong"]);		
+		echo("</td></tr>\n");
+	}
+	echo("</table>\n");
+		
+       //$connection = null;
+	
+
+?>
+
+
+CREATE TABLE JuniUser (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+name VARCHAR(30) NOT NULL,
+passcode VARCHAR(10) not null
+);
+
+CREATE TABLE TimeDingDong (
+time TIMESTAMP
+);
+
+CREATE_TABLE whoDingDonged ()
+{
+
+}
+}
+
+
+$result = $connection->query($sql);
+    

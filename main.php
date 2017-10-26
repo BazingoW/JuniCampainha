@@ -52,23 +52,50 @@ text-align: center;
  <span id="result" class="answer" style="display:none">Ding Dong!</span>
  
     <script>
-   
+   function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
   
         $(document).ready(function(){
             
             
     $("#target").click(function(){
       
-        
-        $.post("postdingdong.php",null, function(info){
-        
+        var pass=getParameterByName('passcode');
+        if(pass!=null)
+       {
+           $.post('postdingdong.php',{passcode:pass}, function(info){
+               
+                 $("#result").html(info);
+           // $.post("postdingdong.php",null, function(info){
              $("#result").fadeIn().delay(1000).fadeOut();
+           
+           
         });
+       } 
+        else
+            {
+                $("#result").html("Precisas de um passcode");
+                
+                 $("#result").fadeIn().delay(1000).fadeOut();
+            }
+        
+        console.log("hello");
     });
+            
+            
+           
+            
 });
     </script>
     
-  
+
 </body>
 
 </html>
