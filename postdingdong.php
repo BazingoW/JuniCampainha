@@ -18,7 +18,7 @@ if(isset($_POST["passcode"]))
     
      if($count==1)
     {
-         echo("Ding Dong!\n");
+         echo("Ding Dong!");
         $sql = "UPDATE TesteCampainha SET dingdong=true where id=1;";
         $result = $connection->query($sql);
          

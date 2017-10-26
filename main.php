@@ -49,7 +49,7 @@ text-align: center;
 </div>
 
 
- <span id="result" class="answer" style="display:none">Ding Dong!</span>
+ <span id="result" class="answer" style="display:none">something went wrong</span>
  
     <script>
    function getParameterByName(name, url) {
