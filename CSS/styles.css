@@ -1,0 +1,72 @@
+/*makes button biig*/
+.btn-huge{
+    padding:20px 50px;
+   font-size: 20px;
+font-family: 'Roboto', sans-serif;
+    
+}
+
+/*bring button to center*/
+button{
+  margin-top:25%;
+                
+  display:block;
+
+                
+
+}
+
+table{
+    
+margin: auto;
+
+}
+
+  td,   th {
+    border-collapse: collapse;
+    padding: 8px;
+        font-family: 'Roboto', sans-serif;
+     font-size: 15px;
+}
+
+ 
+ tr:nth-child(even){background-color: #ffffff;}
+ tr:nth-child(odd){background-color: #ddd;}
+
+  tr:hover {background-color: #ddd;}
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #646464;
+    color: white;
+        font-family: 'Roboto', sans-serif;
+     font-size: 15px;
+}
+
+/*sets position and color of answer*/
+ .answer {
+   padding-top: 10%;
+  display:block;
+text-align: center;
+     color: white;
+     font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+}
+
+.texterino{
+    font-family: 'Roboto', sans-serif;
+     font-size: 20px;
+}
+   
+/*aligns text*/
+.wrapper {
+    text-align: center;
+}
+.wrapper2 {
+   text-align: center;
+	border: 10px solid green;
+	padding: 5px;
+}
+
