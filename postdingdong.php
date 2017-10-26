@@ -28,7 +28,7 @@ if(isset($_POST["passcode"]))
 
     }
 else
- echo("Invalid PassCode");
+ echo("passcode inválido");
    
 
 }else
