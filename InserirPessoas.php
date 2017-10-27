@@ -4,14 +4,17 @@
   include 'db.php';   
 
 
-$namer=utf8_encode("Jãoaoaooa");
+ if(isset($_GET["user"]) && isset($_GET["pass"]))
+    {
+  
+     
         
-        $sql ="INSERT INTO JuniUser  (name,passcode) VALUES ('Martim Reis','memkg');";
+        $sql ="INSERT INTO JuniUser  (name,passcode) VALUES ('".$_GET["user"] ."','".$_GET["pass"] ."');";
        //  $result = $connection->query($sql);
       
 
          $result = $connection->query($sql);
-
+ }
 
 		$sql = "select * from JuniUser;";
 
