@@ -1,5 +1,5 @@
 <?php
-    include 'footer.php';
+    include 'db.php';
 
     //simple query
 	$sql = "SELECT * FROM TesteCampainha;";
