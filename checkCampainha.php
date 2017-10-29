@@ -5,7 +5,9 @@
 	$sql = "SELECT * FROM TesteCampainha;";
 
 	//make query
-	$result = $connection->query($sql);
+	$result = $connection->prepare($sql);
+    $result->execute();
+
 	
 	//get first row
     $row = $result->fetch();
@@ -18,7 +20,8 @@
 
     //set button off again
     $sql = "UPDATE TesteCampainha SET dingdong=false where id=1;";
-	$result = $connection->query($sql);
+	$result = $connection->prepare($sql);
+    $result->execute();
     
     //turn connection off
     $connection = null;	

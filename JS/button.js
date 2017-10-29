@@ -29,7 +29,7 @@ function getParameterByName(name, url) {
                 //returns what postdingdong echoed
                 $("#result").html(info);
                 
-               
+                $("#result").fadeTo(500,1).delay(1000).fadeTo(500,0);
                       
         });
        } 
@@ -38,10 +38,10 @@ function getParameterByName(name, url) {
                 //tel person to inset passcode
                 $("#result").html("Precisas de um passcode");
                 
-                
+                 $("#result").fadeTo(500,1).delay(1000).fadeTo(500,0);
             }
         
-        $("#result").fadeIn().delay(1000).fadeOut();
+       
     });
             
             

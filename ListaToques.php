@@ -27,9 +27,10 @@
 
 	$sql = "select name, time from timedingdongs natural join JuniUser order by time desc;";
 
+$result = $connection->prepare($sql);
+$result->execute();
 
-
-	$result = $connection->query($sql);
+	
 	
 	$num = $result->rowCount();
 

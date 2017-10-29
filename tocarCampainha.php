@@ -9,7 +9,8 @@
         $sql="SELECT * FROM JuniUser WHERE JuniUser.passcode='".$_POST["passcode"] ."';";
         
         //get result
-        $result = $connection->query($sql);
+        $result = $connection->prepare($sql);
+        $result->execute();
         
         //get row count
         $count = $result->rowCount();
@@ -23,11 +24,13 @@
          
          //update variable
          $sql = "UPDATE TesteCampainha SET dingdong=true where id=1;";
-         $result = $connection->query($sql);
+        $result = $connection->prepare($sql);
+        $result->execute();
          
          //insert new entry
          $sql ="INSERT INTO timedingdongs  (passcode) VALUES ('".$_POST["passcode"]."');";
-         $result = $connection->query($sql);
+        $result = $connection->prepare($sql);
+        $result->execute();
 
     }
 else

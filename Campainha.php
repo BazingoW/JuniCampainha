@@ -21,21 +21,27 @@
 
             
 
-        
+          
     </head>
 <body style ='background-color: #00ACE2;'>
     
-
+<div id="outer">
+    <div id="inner" class="wrapper">
+         <button type="button" class="btn btn-default btn-huge" id="target" >Juni Campainha</button>    
+        <br>
+ <span id="result" class=" inner answer" style="opacity: 0">ASBJDHVASHDVJHDVAA</span>
+  <div class="wrapper"><br>
+    <br>
   
-<div class="wrapper">
-    <button type="button" class="btn btn-default btn-huge" id="target" >Juni Campainha</button>
+    <br>
+    <br>
+     <button type="button" class="btn btn-default " onclick="location.href='ListaToques.php';">Ver Toques</button>   
 </div>
 
 
- <span id="result" class="answer" style="display:none"></span>
- 
-
-
+    </div>
+  
+</div>
 </body>
 
 </html>

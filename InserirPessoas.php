@@ -13,7 +13,8 @@
        //  $result = $connection->query($sql);
       
 
-         $result = $connection->query($sql);
+         $result = $connection->prepare($sql);
+         $result->execute();
  }
 
 		$sql = "select * from JuniUser;";
