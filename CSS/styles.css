@@ -1,7 +1,7 @@
 /*makes button biig*/
 .btn-huge{
-    top:25%;
-    padding:2% 3%;
+    
+    padding:5% 10%;
   font-size: 200%;
 
     
@@ -15,8 +15,7 @@
 }
 #inner {
     height: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+   
 }
 
 /*bring button to center*/
