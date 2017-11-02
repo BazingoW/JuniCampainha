@@ -30,7 +30,7 @@
          <button type="button" class="btn btn-default btn-huge" id="target" >Juni Campainha</button>    
         <br>
  <span id="result" class=" inner answer" style="opacity: 0">ASBJDHVASHDVJHDVAA</span>
-  <div class="wrapper"><br>
+  <div class="wrapper"><br> 
     <br>
   
     <br>
