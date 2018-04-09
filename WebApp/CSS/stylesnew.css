@@ -1,0 +1,37 @@
+body{
+    background-color: #00ACE2;
+    font-family: "Roboto";
+}
+
+
+#target{
+    display: block;
+  width: 80%;
+    margin:  200px auto ;
+}
+
+.align-center{
+    text-align: center;
+    display: block;
+    margin:  0 auto ;
+}
+
+h1{
+    font-size: 50px;
+    font-weight:600;
+}
+
+p{
+    font-size: 26px;
+    text-align: center;
+}
+
+a{
+    color: white;
+}
+
+.volthing{
+    font-size: 300px;
+    color: white;
+    
+}
