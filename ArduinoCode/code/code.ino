@@ -24,16 +24,16 @@ void loop() {
  
     HTTPClient http;  //Declare an object of class HTTPClient
  
-    http.begin("http://web.tecnico.ulisboa.pt/ist181138/Junitec/Bell/checkCampainha.php");  //Specify request destination
+    http.begin("https://web.tecnico.ulisboa.pt/~ist181138/Junitec/JuniCampainha/checkCampainha.php");  //Specify request destination
     int httpCode = http.GET();                                                                  //Send the request
  
     if (httpCode > 0) { //Check the returning code
  
       String payload = http.getString();   //Get the request response payload
       Serial.println(payload);                     //Print the response payload
-      if(payload.indexOf("true") > -1)
+      if(payload.indexOf("false") == -1)
       {
-        Serial.println(https://i.ytimg.com/vi/19C90MRS7eU/maxresdefault.jpg);
+        Serial.println("Alguem Tocou");
       }
       
       }
